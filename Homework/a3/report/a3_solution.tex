@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+
+% No page numbers
+%\pagenumbering{gobble}
+
+% MARGINS (DO NOT EDIT) ---------------------------------------------
+\oddsidemargin  0in \evensidemargin 0in \topmargin -0.5in
+\headheight 0.25in \headsep 0.25in
+\textwidth   6.5in \textheight 9in
+\parskip 1.5ex  \parindent 0ex \footskip 20pt
+% ---------------------------------------------------------------------------------
+
+% HEADER (DO NOT EDIT) -----------------------------------------------
+\newcommand{\problemnumber}{0}
+\newcommand{\myname}{name}
+\newfont{\myfont}{cmssbx10 scaled 1200}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{\myfont Question \problemnumber, Assignment 3, CS224n}
+%\fancyhead[R]{\bssnine \myname}
+\newcommand{\newquestion}[1]{
+\clearpage % page break and flush floats
+\renewcommand{\problemnumber}{#1} % set problem number for header
+\phantom{}  % Put something on the page so it shows
+}
+% ---------------------------------------------------------------------------------
+
+% BEGIN HOMEWORK HERE
+\begin{document}
+
+% Question 1
+\newquestion{1}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+    \begin{enumerate}[label=(\roman*)]
+        \item $m$ tends to accumulate gradients from past steps and let the learner moves faster and faster, which leads to quicker convergence.
+        \item None of model parameters will get larger updates, since this is used to normalize gradients and hence the learner won't go too large steps(overshooting).
+    \end{enumerate}
+    \item
+    \begin{enumerate}[label=(\roman*)]
+        \item $\frac{1}{p_{drop}}$, so that $\mathbb{E}_{p_{drop}}[h_{drop}] = \mathbb{E}_{p_{drop}}[\frac{1}{p_{drop}} p_{drop} h] = \mathbb{E}_{p_{drop}}[h]$.
+        \item During training, dropout is used to reduce the variance of the learner by 'removing' some neurons, in order to prevent overfitting. Evaluation is used to verify the learner where we need the learner to behave stable.
+    \end{enumerate}
+\end{enumerate}
+
+
+
+\newquestion{2}
+\begin{enumerate}[label=(\alph*)]
+    \item The whole transitions are shown as below: \\
+    \begin{table}[H]
+        \resizebox{\textwidth}{!}{
+            \begin{tabular}{ *{3}{l|}l } 
+                Stack & Buffer & New dependency&Transition \\ 
+                \hline
+                [ROOT] & [I, parsed, this, sentence, correctly] &  & Initial Configuration \\ 
+
+                [ROOT, I] & [parsed, this, sentence, correctly] &  & \ttfamily{SHIFT} \\ 
+                
+                [ROOT, I, parsed] & [this, sentence, correctly] &  & \ttfamily{SHIFT} \\ 
+
+                [ROOT, parsed] & [this, sentence, correctly] & I $\leftarrow$ parsed & \ttfamily{LEFT-ARC} \\ 
+
+                [ROOT, parsed, this] & [sentence, correctly] &  & \ttfamily{SHIFT} \\ 
+
+                [ROOT, parsed, this, sentence] & [correctly] &  & \ttfamily{SHIFT} \\ 
+
+                [ROOT, parsed, sentence] & [correctly] & this $\leftarrow$ sentence  & \ttfamily{LEFT-ARC} \\ 
+
+                [ROOT, parsed] & [correctly] & parsed $\rightarrow$ sentence  & \ttfamily{RIGHT-ARC} \\ 
+                
+                [ROOT, parsed, correctly] & [] &   & \ttfamily{SHIFT} \\ 
+
+                [ROOT, parsed] & [] & parsed $\rightarrow$ correctly & \ttfamily{RIGHT-ARC}  \\ 
+
+                [ROOT] & [] & ROOT $\rightarrow$ parsed & \ttfamily{RIGHT-ARC}  \\ 
+            \end{tabular}
+        }
+    \end{table}
+    \item $2n$ times. Because for each word, it will \textit{only} be pop into and out of the stack \textit{once}.
+    \item \item \item  \item The final average training loss is $0.57927$ and the UAS is $88.06$ and $88.10$ on devset and testset respectively.
+    \item 
+    \begin{enumerate}[label=(\roman*)]
+        \item 
+        \textbf{Error type}: Verb Phrase Attachment Error\\
+        \textbf{Incorrect dependency}: fearing $\rightarrow$ wedding\\
+        \textbf{Correct dependency}: fearing $\rightarrow$ heading\\
+        \item 
+        \textbf{Error type}: Coordination Attachment Error\\
+        \textbf{Incorrect dependency}: makes $\rightarrow$ rescue\\
+        \textbf{Correct dependency}: rush $\rightarrow$ rescue\\
+        \item 
+        \textbf{Error type}: Prepositional Phrase Attachment Error\\
+        \textbf{Incorrect dependency}: named $\rightarrow$ Midland\\
+        \textbf{Correct dependency}: guy $\rightarrow$ Midland\\
+        \item 
+        \textbf{Error type}: Modifier Attachment Error\\
+        \textbf{Incorrect dependency}: elements $\rightarrow$ most\\
+        \textbf{Correct dependency}: crucial $\rightarrow$ most\\ 
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
