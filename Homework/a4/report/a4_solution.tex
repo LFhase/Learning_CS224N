@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+
+% No page numbers
+%\pagenumbering{gobble}
+
+% MARGINS (DO NOT EDIT) ---------------------------------------------
+\oddsidemargin  0in \evensidemargin 0in \topmargin -0.5in
+\headheight 0.25in \headsep 0.25in
+\textwidth   6.5in \textheight 9in
+\parskip 1.5ex  \parindent 0ex \footskip 20pt
+% ---------------------------------------------------------------------------------
+
+% HEADER (DO NOT EDIT) -----------------------------------------------
+\newcommand{\problemnumber}{0}
+\newcommand{\myname}{name}
+\newfont{\myfont}{cmssbx10 scaled 1200}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{\myfont Question \problemnumber, Assignment 4, CS224n}
+%\fancyhead[R]{\bssnine \myname}
+\newcommand{\newquestion}[1]{
+\clearpage % page break and flush floats
+\renewcommand{\problemnumber}{#1} % set problem number for header
+\phantom{}  % Put something on the page so it shows
+}
+% ---------------------------------------------------------------------------------
+
+% BEGIN HOMEWORK HERE
+\begin{document}
+
+% Question 1
+\newquestion{1}
+\begin{enumerate}[label=(\alph*)]
+    \item \item \item \item \item \item
+    \item In attention computation, $enc_masks$ is used to remove attention from padded tokens. If we do in this way, 
+    the attention from padded tokens will attend in the prediction, which disobeys intuition and may cause unknown affects. 
+\end{enumerate}
+
+
+
+
+\end{document}
