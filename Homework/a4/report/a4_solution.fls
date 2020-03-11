@@ -95,6 +95,7 @@ INPUT f:/Desktop/Learning_CS224n/Homework/a4/report/a4_solution.out
 INPUT f:/Desktop/Learning_CS224n/Homework/a4/report/a4_solution.out
 OUTPUT f:/Desktop/Learning_CS224n/Homework/a4/report/a4_solution.out
 OUTPUT f:/Desktop/Learning_CS224n/Homework/a4/report/a4_solution.pdf
+INPUT e:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT e:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT e:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT e:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -123,4 +124,7 @@ INPUT f:/Desktop/Learning_CS224n/Homework/a4/report/a4_solution.out
 INPUT e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+INPUT e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
