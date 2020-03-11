@@ -13,7 +13,9 @@ You can open a new issue or send me an email if you find any mistakes.
 ### Accomplishment 
 - [Done] [Assignment 1](https://github.com/LFhase/Learning_CS224N/blob/master/Homework/a1/exploring_word_vectors.ipynb) 😄
 - [Done] [Assignment 2](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a2) 😄
-- [Ongoing] Assignment 3 
+- [Done] [Assignment 3](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a3) 😄
+- [Done] [Assignment 4](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a4) 😄
+- [Ongoing] Assignment 5 
 
 
 ### Tools 🔨
