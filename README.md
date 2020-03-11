@@ -12,9 +12,9 @@ You can open a new issue or send me an email if you find any mistakes.
 
 ### Accomplishment 
 - [Done] [Assignment 1](https://github.com/LFhase/Learning_CS224N/blob/master/Homework/a1/exploring_word_vectors.ipynb) 😄
-- [Done] [Assignment 2](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a2) 😄
-- [Done] [Assignment 3](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a3) 😄
-- [Done] [Assignment 4](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a4) 😄
+- [Done] [Assignment 2](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a2/a2_solution.pdf) 😄
+- [Done] [Assignment 3](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a3/a3_solution.pdf) 😄
+- [Done] [Assignment 4](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a4/a4_solution.pdf) 😄
 - [Ongoing] Assignment 5 
 
 
