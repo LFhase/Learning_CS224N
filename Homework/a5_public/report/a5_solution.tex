@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+
+% No page numbers
+%\pagenumbering{gobble}
+
+% MARGINS (DO NOT EDIT) ---------------------------------------------
+\oddsidemargin  0in \evensidemargin 0in \topmargin -0.5in
+\headheight 0.25in \headsep 0.25in
+\textwidth   6.5in \textheight 9in
+\parskip 1.5ex  \parindent 0ex \footskip 20pt
+% ---------------------------------------------------------------------------------
+
+% HEADER (DO NOT EDIT) -----------------------------------------------
+\newcommand{\problemnumber}{0}
+\newcommand{\myname}{name}
+\newfont{\myfont}{cmssbx10 scaled 1200}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{\myfont Question \problemnumber, Assignment 5, CS224n}
+%\fancyhead[R]{\bssnine \myname}
+\newcommand{\newquestion}[1]{
+\clearpage % page break and flush floats
+\renewcommand{\problemnumber}{#1} % set problem number for header
+\phantom{}  % Put something on the page so it shows
+}
+% ---------------------------------------------------------------------------------
+
+% BEGIN HOMEWORK HERE
+\begin{document}
+
+% Question 1
+\newquestion{1}
+\begin{enumerate}[label=(\alph*)]
+    \item Typically, the vocabulary size of characters is lower than that of words, so a lower dimension of a lookup table is enough for character-embeddings.
+    \item $Size_{char}  = e_{char}*V_{char}$ and $Size_{word} = e_{word}*V_{word}$, the second has more parameters by a $\frac{50,000}{96}$.
+    \item Since CNN is not sensible to the word positions, it's more robust to noises in the sentence, while RNN relies a lot on the positional information.
+    \item Average-pooling makes more use of the information than max-pooling as it aggregates the global information by averaging, while max-pooling only focuses on max-informative part.
+\end{enumerate}
+
+\newquestion{2}
+\begin{enumerate}
+    \item 
+    \begin{enumerate}[label=(\roman*)]
+        \item \textit{Aqui} is translated into \textit{So} and the grammar is incorrect. Possible fix is to include a loss related to grammar to avoid the mistake.
+        \item Alignment error. Possible fix is to adopt better attention mechanism.
+        \item Out of vocabulary error. Possible fix to extend the vocabulary.
+        \item Grammar alignment error. Possible fix to combined fixes in i and ii.
+        \item Direct translation error. Possible fix to extend the dataset to include this kind of sentences.
+        \item Number translation error. Possible fix to extend the dataset to include this kind of sentences.
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item por 3 aos. For three years. She did it for three years. The context is ignored here and possible fix is to integrate context information in NMT.
+        \item Ella salv mi vida, mi pareja y yo salvamos la de ella. She saved my life, my partner and I took out of it. She saved my life;  I and my partner saved hers.
+        Kinda one to many error. Possible fix is to extend the dataset to include this kind of sentences.
+    \end{enumerate}
+    \item 
+    \begin{enumerate}[label=(\roman*)]
+        \item $BP_1 = exp(1-\frac{6}{5}) = exp(-\frac{1}{5})$, $BP_2 = 1$, since $c_2$ is longer than $r_2$; \\
+        $BLEU_1 = exp(-\frac{1}{5}+0.5log\frac{3}{5} + 0.5log\frac{2}{4}) = 0.45$ \\
+        $BLEU_2 = exp(0.5log\frac{5}{5} + 0.5\frac{2}{4}) = 0.71$. \\The second one is better. I also agree with it.
+        \item $BLEU_1 = exp(-\frac{1}{5}+0.5log\frac{3}{5} + 0.5log\frac{2}{4}) = 0.45$ \\
+        and $BLEU_2 = exp(0.5log\frac{2}{5} + 0.5log\frac{1}{4}) = 0.31$. \\
+        Now the first one seems to be better but I think the second one should be better.
+        \item It will introduce the bias into BLEU metric since we don't consider other possible sentences as references.
+        \item BLEU is more objective than human and tends to be a fair metric when we have multiple reference sentences. However, 
+        when the data availability is poor, BLEU is less fair than human evaluation. Also, higher BLEU score can't 100\% 
+        guaranttee a better translation since the N-gram computation has some issues (e.g., doesn't consider relative position).
+    \end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}
