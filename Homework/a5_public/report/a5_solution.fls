@@ -118,6 +118,8 @@ INPUT e:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT e:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT e:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT e:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT e:/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT e:/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.aux
 INPUT f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.out
 INPUT f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.out

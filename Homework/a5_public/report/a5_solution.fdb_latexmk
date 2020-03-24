@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1584934508 "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.tex" "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.pdf" "a5_solution" 1584934509
-  "a5_solution.aux" 1584934509 662 b2b94621371df8d9296b8bf5bec1b851 ""
-  "a5_solution.out" 1584934509 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "a5_solution.tex" 1584934505 4349 7d19607292f50fe02299efb89dc2dac8 ""
+["pdflatex"] 1585042269 "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.tex" "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.pdf" "a5_solution" 1585042270
+  "a5_solution.aux" 1585042270 662 b2b94621371df8d9296b8bf5bec1b851 ""
+  "a5_solution.out" 1585042270 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "a5_solution.tex" 1585042266 4970 b83fb4b07bbeff7f2877f1ff5783dd84 ""
   "e:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1546784809 3332 103109f5612ad95229751940c61aada0 ""
   "e:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1546781523 1004 54797486969f23fa377b128694d548df ""
   "e:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1546781523 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -44,6 +44,7 @@
   "e:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty" 1546781539 4116 32e6abd27229755a83a8b7f18e583890 ""
   "e:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty" 1546781539 2432 8ff93b1137020e8f21930562a874ae66 ""
   "e:/texlive/2018/texmf-dist/tex/latex/base/article.cls" 1546786038 19933 3097d1b31d3c45dc957096f554529032 ""
+  "e:/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd" 1546786038 2473 8052e27f66be3b6e63e955171dae6bfe ""
   "e:/texlive/2018/texmf-dist/tex/latex/base/size11.clo" 1546786038 8310 3be7fb8fac17ab8f3f822aa0c9800815 ""
   "e:/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty" 1546784191 49620 efae1df9a29a357a1047f856275eae15 ""
   "e:/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1546784419 10663 d7fcc0dc4f35e8998b8cfeef8407d37d ""
@@ -73,12 +74,12 @@
   "e:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1546790598 3173767 7100bf788d9615b497d8659339322484 ""
   "e:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1546790760 4223236 f561f954ddab34a29fc242f6e5afb338 ""
   "e:/texlive/2018/texmf.cnf" 1546790491 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.aux" 1584934509 662 b2b94621371df8d9296b8bf5bec1b851 ""
-  "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.tex" 1584934505 4349 7d19607292f50fe02299efb89dc2dac8 ""
+  "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.aux" 1585042270 662 b2b94621371df8d9296b8bf5bec1b851 ""
+  "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.tex" 1585042266 4970 b83fb4b07bbeff7f2877f1ff5783dd84 ""
   (generated)
   "a5_solution.aux"
-  "a5_solution.log"
   "a5_solution.out"
-  "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.pdf"
   "a5_solution.pdf"
+  "a5_solution.log"
+  "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.pdf"
   "f:/Desktop/Learning_CS224n/Homework/a5_public/report/a5_solution.log"

@@ -1,24 +1,30 @@
 # Learning_CS224n
 My approach to CS224n [AT] Stanford 2019Winter -- Natural Language Processing with Deep Learning. 💡
 
-### Introduction 
-This repo records my solutions to assignments and projects of CS224n [AT] Stanford 2019-2020Winter. <br>
+One of many my self-studied courses. You can also check out some of them via belowing links:
+- [CS229 Machine Learning, Stanford](https://github.com/LFhase/CS229)
+- [CS224w Machine Learning with Graphs, Stanford](https://github.com/LFhase/Learning_CS224w)
+
+> *It's the open Internet and the great and kind minds that makes a glance at the beautiful knowledge world possible for us navigators.*
+
+***Thousand Thanks** to those kind and cool people!*
+
+## Introduction 
+This repo records my solutions to all assignments of CS224n [AT] Stanford 2019-2020Winter. <br>
 
 The main referred material is only:
 - [course web page](https://web.stanford.edu/class/cs224n/)
 
-***Great Thanks** to those kind and cool people!* <br>
 You can open a new issue or send me an email if you find any mistakes.
 
-### Accomplishment 
+## Accomplishment 
 - [Done] [Assignment 1](https://github.com/LFhase/Learning_CS224N/blob/master/Homework/a1/exploring_word_vectors.ipynb) 😄
 - [Done] [Assignment 2](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a2/a2_solution.pdf) 😄
 - [Done] [Assignment 3](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a3/a3_solution.pdf) 😄
 - [Done] [Assignment 4](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a4/a4_solution.pdf) 😄
-- [Ongoing] Assignment 5 
+- [Done] [Assignment 5](https://github.com/LFhase/Learning_CS224N/tree/master/Homework/a5_public/a5_solution.pdf) 😄
 
-
-### Tools 🔨
+## Tools 🔨
 VS Code <br>
 Python 3.7.3 <br>
 PyTorch <br>
